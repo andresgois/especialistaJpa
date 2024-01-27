@@ -1,38 +1,11 @@
 package org.example.modulo02;
 
+import org.example.factory.EntityManagerTest;
 import org.example.model.Produto;
-import org.junit.*;
+import org.junit.Assert;
+import org.junit.Test;
 
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.Persistence;
-
-public class ConsultandoRegirstrosTest {
-
-    private static EntityManagerFactory entityManagerFactory;
-
-    private static EntityManager entityManager;
-
-    @BeforeClass
-    public static void setBeforeClass(){
-        entityManagerFactory = Persistence
-                .createEntityManagerFactory("Ecommerce-PU");
-    }
-
-    @AfterClass
-    public static void setAfterClass(){
-        entityManagerFactory.close();
-    }
-
-    @Before
-    public void setUp(){
-       entityManager  = entityManagerFactory.createEntityManager();
-    }
-
-    @After
-    public void tearDown(){
-        entityManager.close();
-    }
+public class ConsultandoRegirstrosTest extends EntityManagerTest {
 
     @Test
     public void buscarPorIdentificador(){
