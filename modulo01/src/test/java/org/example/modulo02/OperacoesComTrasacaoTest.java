@@ -158,4 +158,21 @@ public class OperacoesComTrasacaoTest extends EntityManagerTest {
         Produto pUpdate2 =  entityManager.find(Produto.class, 6);
         Assert.assertEquals("Notebook DELL 2", pUpdate2.getNome());
     }
+
+    @Test
+    public void impedirAlteracaoNoBancoDeDados(){
+        Produto p =  entityManager.find(Produto.class, 1);
+
+        // desanexa uma instancia que esta na memoria do entity manager
+        entityManager.detach(p);
+
+        entityManager.getTransaction().begin();
+        p.setNome("Kindle book");
+        entityManager.getTransaction().commit();
+
+        entityManager.clear();
+
+        Produto pUpdate =  entityManager.find(Produto.class, p.getId());
+        Assert.assertEquals("Kindle", pUpdate.getNome());
+    }
 }
