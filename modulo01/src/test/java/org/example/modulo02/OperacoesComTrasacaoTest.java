@@ -103,7 +103,7 @@ public class OperacoesComTrasacaoTest extends EntityManagerTest {
     public void inserirObjetoComMerge(){
         Produto p =  new Produto();
 
-        p.setId(5);
+        p.setId(4);
         p.setNome("Kindle book");
         p.setPreco(new BigDecimal(89.95));
         p.setDescricao("New Kindle");
@@ -114,7 +114,48 @@ public class OperacoesComTrasacaoTest extends EntityManagerTest {
 
         entityManager.clear();
 
-        Produto pUpdate =  entityManager.find(Produto.class, 5);
+        Produto pUpdate =  entityManager.find(Produto.class, 4);
         Assert.assertEquals("Kindle book", pUpdate.getNome());
+    }
+
+    @Test
+    public void mostrarDiferencaPersistMerge(){
+        Produto produtoPersist =  new Produto();
+
+        produtoPersist.setId(5);
+        produtoPersist.setNome("Smartphone S10");
+        produtoPersist.setPreco(new BigDecimal(899.95));
+        produtoPersist.setDescricao("O melhor da sansung");
+
+        entityManager.getTransaction().begin();
+        entityManager.persist(produtoPersist);
+        produtoPersist.setNome("SmartPhone Sansung S50");
+        entityManager.getTransaction().commit();
+
+        entityManager.clear();
+
+        Produto pUpdate =  entityManager.find(Produto.class, 5);
+        Assert.assertEquals("SmartPhone Sansung S50", pUpdate.getNome());
+        ///------------------------------------------------------
+        Produto produtoMerge =  new Produto();
+
+        produtoMerge.setId(6);
+        produtoMerge.setNome("Notebook DELL");
+        produtoMerge.setPreco(new BigDecimal(3999.95));
+        produtoMerge.setDescricao("O melhor da notebook");
+
+        entityManager.getTransaction().begin();
+        entityManager.merge(produtoMerge);
+        /* não será alterado o nome da instancia, pois o merge não gerencia, para ser a tualizado
+        * tem que fazer como esta abaixo
+        * produtoMerge= entityManager.merge(produtoMerge);
+        * */
+        produtoMerge.setNome("Notebook DELL 2");
+        entityManager.getTransaction().commit();
+
+        entityManager.clear();
+
+        Produto pUpdate2 =  entityManager.find(Produto.class, 6);
+        Assert.assertEquals("Notebook DELL 2", pUpdate2.getNome());
     }
 }
