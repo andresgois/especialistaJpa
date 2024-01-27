@@ -15,8 +15,8 @@
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create" />
             <property name="javax.persistence.sql-load-script-source" value="META-INF/banco-de-dados/dados-inicias.sql" />
 
-            <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />
-             <!--<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />-->
+            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.MySQL5InnoDBDialect" />-->
+             <property name="hibernate.dialect" value="org.hibernate.dialect.MySQL8Dialect" />
 
             <property name="hibernate.format_sql" value="true"/>
             <property name="hibernate.show_sql" value="true" />
