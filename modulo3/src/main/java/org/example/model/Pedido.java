@@ -36,4 +36,6 @@ public class Pedido {
     @Enumerated(EnumType.STRING)
     private StatusPedidoEnum status;
 
+    @Embedded
+    private EnderecoEntregaPedido enderecoEntrega;
 }

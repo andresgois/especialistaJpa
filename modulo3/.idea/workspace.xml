@@ -4,19 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: criando entidades">
-      <change afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/mapeamento/MapeandoEnumeracoesTest.java" afterDir="false" />
+    <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: ajustando valores das entidades">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/model/EnderecoEntregaPedido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/mapeamento/MapeamentoObjetoEmbutidoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Categoria.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Estoque.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ItemPedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/NotaFiscal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/NotaFiscal.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoBoleto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoBoleto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoCartao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +45,8 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido.executor": "Run",
+    "JUnit.MapeamentoObjetoEmbutidoTest.executor": "Run",
     "JUnit.MapeandoEnumeracoesTest.testarEnum.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.modulo3 [clean,install].executor": "Run",
@@ -78,6 +73,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="org.example.model" />
       <recent name="org.example.enums" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -92,7 +88,7 @@
       <command value="mvn clean package" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MapeandoEnumeracoesTest.testarEnum">
+  <component name="RunManager" selected="JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.App" />
       <module name="modulo3" />
@@ -102,6 +98,53 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mapeamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mapeamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeamentoCategoriaTest" />
+      <option name="METHOD_NAME" value="analisaMapeamentoObjetoEmbutido" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapeamentoObjetoEmbutidoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mapeamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mapeamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeamentoObjetoEmbutidoTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.mapeamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.mapeamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeamentoObjetoEmbutidoTest" />
+      <option name="METHOD_NAME" value="analisaMapeamentoObjetoEmbutido" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -124,6 +167,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido" />
+        <item itemvalue="JUnit.MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido" />
+        <item itemvalue="JUnit.MapeamentoObjetoEmbutidoTest" />
         <item itemvalue="JUnit.MapeandoEnumeracoesTest.testarEnum" />
         <item itemvalue="Application.App" />
       </list>
@@ -144,7 +190,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1706388364679</updated>
-      <workItem from="1706388365745" duration="6155000" />
+      <workItem from="1706388365745" duration="7432000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles:&#9;feat: criando entidades">
       <option name="closed" value="true" />
@@ -154,7 +200,23 @@
       <option name="project" value="LOCAL" />
       <updated>1706392224171</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=":sparkles:&#9;feat: criando entidades">
+      <option name="closed" value="true" />
+      <created>1706398896433</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1706398896433</updated>
+    </task>
+    <task id="LOCAL-00003" summary=":sparkles:&#9;feat: ajustando valores das entidades">
+      <option name="closed" value="true" />
+      <created>1706398926045</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1706398926045</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -162,6 +224,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":sparkles:&#9;feat: criando entidades" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles:&#9;feat: criando entidades" />
+    <MESSAGE value=":sparkles:&#9;feat: ajustando valores das entidades" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles:&#9;feat: ajustando valores das entidades" />
   </component>
 </project>
