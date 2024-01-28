@@ -24,7 +24,7 @@ public class MapeamentoObjetoEmbutidoTest extends EntityManagerTest {
         end.setEstado("CE");
 
         Pedido pedido = new Pedido();
-        pedido.setId(1);
+        //pedido.setId(1);
         pedido.setDataPedido(LocalDateTime.now());
         pedido.setDataConclusao(null);
         pedido.setStatus(StatusPedidoEnum.AGUARDADO);
