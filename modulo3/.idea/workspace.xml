@@ -4,11 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: mapeamento many to one">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/relacionamento/OneToManyTest.java" afterDir="false" />
+    <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: mapeamento o one to many">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/relacionamento/AutoRelacionamentoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Cliente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Cliente.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mapeamento/MapeamentoCategoriaTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/mapeamento/MapeamentoCategoriaTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +44,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.AutoRelacionamentoTest.verificaCliente.executor": "Run",
     "JUnit.ManyToOneTest.verificaCliente.executor": "Debug",
     "JUnit.ManyToOneTest.verificaClienteItemPedido.executor": "Debug",
     "JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido.executor": "Run",
@@ -95,8 +96,8 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OneToManyTest.verificaClienteItemPedido">
-    <configuration name="ManyToOneTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.AutoRelacionamentoTest.verificaCliente">
+    <configuration name="AutoRelacionamentoTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
@@ -105,7 +106,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.relacionamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.ManyToOneTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.AutoRelacionamentoTest" />
       <option name="METHOD_NAME" value="verificaCliente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -128,7 +129,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapeandoEnumeracoesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
@@ -137,8 +138,9 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.mapeamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeandoEnumeracoesTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeamentoCategoriaTest" />
+      <option name="METHOD_NAME" value="analisaMapeamentoObjetoEmbutido" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -177,11 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.AutoRelacionamentoTest.verificaCliente" />
+        <item itemvalue="JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido" />
         <item itemvalue="JUnit.OneToManyTest.verificaClienteItemPedido" />
         <item itemvalue="JUnit.OneToManyTest.verificaCliente" />
         <item itemvalue="JUnit.ManyToOneTest.verificaClienteItemPedido" />
-        <item itemvalue="JUnit.ManyToOneTest.verificaCliente" />
-        <item itemvalue="JUnit.MapeandoEnumeracoesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +204,7 @@
       <updated>1706388364679</updated>
       <workItem from="1706388365745" duration="9450000" />
       <workItem from="1706486523752" duration="717000" />
-      <workItem from="1706960730586" duration="3642000" />
+      <workItem from="1706960730586" duration="4438000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles:&#9;feat: criando entidades">
       <option name="closed" value="true" />
@@ -252,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706965392822</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary=":sparkles:&#9;feat: mapeamento o one to many">
+      <option name="closed" value="true" />
+      <created>1706967100950</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1706967100950</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,7 +274,8 @@
     <MESSAGE value=":sparkles:&#9;feat: testando categorias" />
     <MESSAGE value=":sparkles:&#9;feat: correcao ids" />
     <MESSAGE value=":sparkles:&#9;feat: mapeamento many to one" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles:&#9;feat: mapeamento many to one" />
+    <MESSAGE value=":sparkles:&#9;feat: mapeamento o one to many" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles:&#9;feat: mapeamento o one to many" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

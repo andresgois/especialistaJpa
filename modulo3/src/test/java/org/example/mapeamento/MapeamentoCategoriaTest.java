@@ -17,7 +17,7 @@ public class MapeamentoCategoriaTest extends EntityManagerTest {
     public void analisaMapeamentoObjetoEmbutido(){
         Categoria c = new Categoria();
         c.setNome("Eletrônicos");
-        c.setCategoriaPaiId(1);
+       // c.setCategoriaPaiId(1);
 
         entityManager.getTransaction().begin();
         entityManager.persist(c);
