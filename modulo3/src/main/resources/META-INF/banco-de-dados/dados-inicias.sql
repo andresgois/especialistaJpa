@@ -8,3 +8,5 @@ insert into tb_cliente (id, nome,sexo) values (3,'Ana Beatriz','FEMININO');
 insert into tb_pedido (id, cliente_id, data_pedido, total, status) values (1,1, sysdate(), 1000.0, 'AGUARDADO');
 
 insert into tb_item_pedido (id, pedido_id, produto_id, preco_produto, quantidade) values (1,1,1,5.0,2);
+
+insert into tb_categoria (id, nome) values (2, "Eletrodomésticos");

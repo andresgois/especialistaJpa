@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: mapeamento o auto relacionamento">
-      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/relacionamento/RemovendoEntidadeReferenciadaTest.java" afterDir="false" />
+    <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: removendo entidade referenciada">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/relacionamento/ManyToManyTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Categoria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Categoria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-inicias.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/banco-de-dados/dados-inicias.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,6 +46,7 @@
   "keyToString": {
     "Application.App.executor": "Run",
     "JUnit.AutoRelacionamentoTest.verificaCliente.executor": "Run",
+    "JUnit.ManyToManyTest.verificaCliente.executor": "Run",
     "JUnit.ManyToOneTest.verificaCliente.executor": "Debug",
     "JUnit.ManyToOneTest.verificaClienteItemPedido.executor": "Debug",
     "JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido.executor": "Run",
@@ -98,7 +100,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada">
+  <component name="RunManager" selected="JUnit.ManyToManyTest.verificaCliente">
     <configuration name="AutoRelacionamentoTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
@@ -109,6 +111,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.relacionamento" />
       <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.AutoRelacionamentoTest" />
+      <option name="METHOD_NAME" value="verificaCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManyToManyTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.relacionamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.ManyToManyTest" />
       <option name="METHOD_NAME" value="verificaCliente" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -126,22 +144,6 @@
       <option name="PACKAGE_NAME" value="org.example.mapeamento" />
       <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeamentoCategoriaTest" />
       <option name="METHOD_NAME" value="analisaMapeamentoObjetoEmbutido" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OneToManyTest.verificaClienteItemPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="modulo3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.relacionamento.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.OneToManyTest" />
-      <option name="METHOD_NAME" value="verificaClienteItemPedido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManyToManyTest.verificaCliente" />
         <item itemvalue="JUnit.RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada" />
         <item itemvalue="JUnit.RemovendoEntidadeReferenciadaTest" />
         <item itemvalue="JUnit.AutoRelacionamentoTest.verificaCliente" />
         <item itemvalue="JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido" />
-        <item itemvalue="JUnit.OneToManyTest.verificaClienteItemPedido" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +207,7 @@
       <updated>1706388364679</updated>
       <workItem from="1706388365745" duration="9450000" />
       <workItem from="1706486523752" duration="717000" />
-      <workItem from="1706960730586" duration="5614000" />
+      <workItem from="1706960730586" duration="6368000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles:&#9;feat: criando entidades">
       <option name="closed" value="true" />
@@ -271,7 +273,15 @@
       <option name="project" value="LOCAL" />
       <updated>1706967860226</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary=":sparkles:&#9;feat: removendo entidade referenciada">
+      <option name="closed" value="true" />
+      <created>1706969214235</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1706969214235</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -285,7 +295,8 @@
     <MESSAGE value=":sparkles:&#9;feat: mapeamento many to one" />
     <MESSAGE value=":sparkles:&#9;feat: mapeamento o one to many" />
     <MESSAGE value=":sparkles:&#9;feat: mapeamento o auto relacionamento" />
-    <option name="LAST_COMMIT_MESSAGE" value=":sparkles:&#9;feat: mapeamento o auto relacionamento" />
+    <MESSAGE value=":sparkles:&#9;feat: removendo entidade referenciada" />
+    <option name="LAST_COMMIT_MESSAGE" value=":sparkles:&#9;feat: removendo entidade referenciada" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
