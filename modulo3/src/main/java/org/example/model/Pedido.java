@@ -45,6 +45,6 @@ public class Pedido {
     @Embedded
     private EnderecoEntregaPedido enderecoEntrega;
 
-    @OneToMany(mappedBy = "pedido",fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "pedido")//,fetch = FetchType.LAZY, cascade = CascadeType.ALL)
     private List<ItemPedido> itens;
 }
