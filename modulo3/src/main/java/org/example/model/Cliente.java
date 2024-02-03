@@ -7,6 +7,7 @@ import lombok.Setter;
 import org.example.enums.SexoEnum;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Getter
 @Setter
@@ -24,4 +25,7 @@ public class Cliente {
 
     @Enumerated(EnumType.STRING)
     private SexoEnum sexo;
+
+    @OneToMany(mappedBy = "cliente")
+    private List<Pedido> pedidos;
 }
