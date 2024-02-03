@@ -39,3 +39,19 @@
 ![Muitos pra Muitos](./asserts/m_pra_m_rel.png)
 
 ![Muitos pra Muitos](./asserts/m_pra_m_java.png)
+
+
+### Mapeamento Bidirecional
+
+> Inda: **List<Categoria> categorias**
+
+![Muitos pra Muitos](./asserts/m_pra_m_java.png)
+
+> Volta: **@ManyToMany(mappedBy= ...)**
+
+### Owner e Non-Owning
+- Dono e não dono do mapeamento
+
+> Dono que utiliza **@JoinTable ou @JoinColumn ou quem utiliza o contrário de mappedBy**
+
+> Quem persiste a relação é o *Owner*
