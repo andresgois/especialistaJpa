@@ -55,3 +55,41 @@
 > Dono que utiliza **@JoinTable ou @JoinColumn ou quem utiliza o contrário de mappedBy**
 
 > Quem persiste a relação é o *Owner*
+
+
+### Estratégias para gerar ID
+- Hibernate escolhe a forma, ele cria a tabela hibernate_sequence
+
+```
+@Id
+@GeneratedValue(strategy = GenerationType.AUTO)
+private Integer id;
+```
+
+- Ele gera uma sequence
+
+```
+@Id
+@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq_cat")
+@SequenceGenerator(name = "seq_cat", sequenceName = "seq_chave_primary_cat")
+private Integer id;
+```
+
+- ele cria a tabela hibernate_sequences, ele vai com chave primaria  e o próximo valor
+
+```
+@Id
+@GeneratedValue(strategy = GenerationType.TABLE, generator = "tabela")
+@TableGenerator(name = "tabela", table = "hibernate_sequences",
+            pkColumnName = "sequence_name", pkColumnValue = "categoria",
+            valueColumnName = "next_val", initialValue = 0, allocationSize = 1)
+private Integer id;
+```
+
+- auto incremento
+
+```
+@Id
+@GeneratedValue(strategy = GenerationType.IDENTITY)
+private Integer id;
+```
