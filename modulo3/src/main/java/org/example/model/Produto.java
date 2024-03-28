@@ -28,6 +28,6 @@ public class Produto {
     @ManyToMany
     @JoinTable(name = "produto_categoria",
         joinColumns = @JoinColumn(name = "produto_id"),
-        inverseJoinColumns = @JoinColumn(name = "catgoria_id"))
+        inverseJoinColumns = @JoinColumn(name = "categoria_id"))
     private List<Categoria> categorias;
 }

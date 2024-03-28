@@ -24,7 +24,7 @@ public class Pedido {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne
+    @ManyToOne // muitos pedidos para um cliente
     @JoinColumn(name = "cliente_id")
     private Cliente cliente;
 

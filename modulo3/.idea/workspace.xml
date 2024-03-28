@@ -6,6 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: many to many">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,46 +40,46 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.App.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.AutoRelacionamentoTest.verificaCliente.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ManyToManyTest.verificaCliente.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.ManyToOneTest.verificaCliente.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.ManyToOneTest.verificaClienteItemPedido.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapeamentoCategoriaTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapeamentoObjetoEmbutidoTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapeandoEnumeracoesTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MapeandoEnumeracoesTest.testarEnum.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OneToManyTest.verificaCliente.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.OneToManyTest.verificaClienteItemPedido.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.RemovendoEntidadeReferenciadaTest.executor&quot;: &quot;Debug&quot;,
-    &quot;JUnit.RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada.executor&quot;: &quot;Run&quot;,
-    &quot;Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.modulo3 [clean,install].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.modulo3 [clean,package].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.modulo3 [clean].executor&quot;: &quot;Run&quot;,
-    &quot;Maven.modulo3 [install].executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/andre/Documentos/projetos/Java&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;SDKs&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.App.executor": "Run",
+    "JUnit.AutoRelacionamentoTest.verificaCliente.executor": "Run",
+    "JUnit.ManyToManyTest.verificaCliente.executor": "Run",
+    "JUnit.ManyToOneTest.verificaCliente.executor": "Run",
+    "JUnit.ManyToOneTest.verificaClienteItemPedido.executor": "Run",
+    "JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido.executor": "Run",
+    "JUnit.MapeamentoCategoriaTest.executor": "Run",
+    "JUnit.MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido.executor": "Run",
+    "JUnit.MapeamentoObjetoEmbutidoTest.executor": "Run",
+    "JUnit.MapeandoEnumeracoesTest.executor": "Run",
+    "JUnit.MapeandoEnumeracoesTest.testarEnum.executor": "Run",
+    "JUnit.OneToManyTest.verificaCliente.executor": "Run",
+    "JUnit.OneToManyTest.verificaClienteItemPedido.executor": "Debug",
+    "JUnit.RemovendoEntidadeReferenciadaTest.executor": "Debug",
+    "JUnit.RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada.executor": "Run",
+    "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
+    "Maven.modulo3 [clean,install].executor": "Run",
+    "Maven.modulo3 [clean,package].executor": "Run",
+    "Maven.modulo3 [clean].executor": "Run",
+    "Maven.modulo3 [install].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/andre/Documentos/projetos/Java",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "SDKs",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="org.example.model" />
@@ -96,8 +98,8 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido">
-    <configuration name="ManyToManyTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ManyToOneTest.verificaClienteItemPedido">
+    <configuration name="ManyToOneTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
@@ -106,8 +108,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.relacionamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.ManyToManyTest" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.ManyToOneTest" />
       <option name="METHOD_NAME" value="verificaCliente" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ManyToOneTest.verificaClienteItemPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.relacionamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.ManyToOneTest" />
+      <option name="METHOD_NAME" value="verificaClienteItemPedido" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -160,29 +178,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="modulo3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.relacionamento.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.RemovendoEntidadeReferenciadaTest" />
-      <option name="METHOD_NAME" value="removerEntidadeRelacionada" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ManyToOneTest.verificaClienteItemPedido" />
+        <item itemvalue="JUnit.ManyToOneTest.verificaCliente" />
         <item itemvalue="JUnit.MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido" />
         <item itemvalue="JUnit.MapeandoEnumeracoesTest.testarEnum" />
         <item itemvalue="JUnit.MapeandoEnumeracoesTest" />
-        <item itemvalue="JUnit.ManyToManyTest.verificaCliente" />
-        <item itemvalue="JUnit.RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +207,7 @@
       <workItem from="1706486523752" duration="717000" />
       <workItem from="1706960730586" duration="6439000" />
       <workItem from="1707009191358" duration="192000" />
-      <workItem from="1711578647005" duration="2907000" />
+      <workItem from="1711578647005" duration="4688000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles:&#9;feat: criando entidades">
       <option name="closed" value="true" />
