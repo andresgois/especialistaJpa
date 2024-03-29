@@ -5,7 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: many to many">
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/example/relacionamento/OneToOneTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Estoque.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Estoque.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/NotaFiscal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/NotaFiscal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoCartao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Produto.java" afterDir="false" />
     </list>
@@ -55,6 +59,8 @@
     "JUnit.MapeandoEnumeracoesTest.testarEnum.executor": "Run",
     "JUnit.OneToManyTest.verificaCliente.executor": "Run",
     "JUnit.OneToManyTest.verificaClienteItemPedido.executor": "Debug",
+    "JUnit.OneToOneTest.verificaCliente.executor": "Debug",
+    "JUnit.OneToOneTest.verificaNotaFiscal.executor": "Run",
     "JUnit.RemovendoEntidadeReferenciadaTest.executor": "Debug",
     "JUnit.RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
@@ -98,7 +104,7 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ManyToOneTest.verificaClienteItemPedido">
+  <component name="RunManager" selected="JUnit.OneToOneTest.verificaCliente">
     <configuration name="ManyToOneTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
@@ -147,32 +153,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapeandoEnumeracoesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OneToOneTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.mapeamento.*" />
+          <option name="PATTERN" value="org.example.relacionamento.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.mapeamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeandoEnumeracoesTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.OneToOneTest" />
+      <option name="METHOD_NAME" value="verificaCliente" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapeandoEnumeracoesTest.testarEnum" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OneToOneTest.verificaNotaFiscal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="org.example.mapeamento.*" />
+          <option name="PATTERN" value="org.example.relacionamento.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="org.example.mapeamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.mapeamento.MapeandoEnumeracoesTest" />
-      <option name="METHOD_NAME" value="testarEnum" />
+      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.OneToOneTest" />
+      <option name="METHOD_NAME" value="verificaNotaFiscal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -180,11 +187,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.OneToOneTest.verificaCliente" />
+        <item itemvalue="JUnit.OneToOneTest.verificaNotaFiscal" />
         <item itemvalue="JUnit.ManyToOneTest.verificaClienteItemPedido" />
         <item itemvalue="JUnit.ManyToOneTest.verificaCliente" />
         <item itemvalue="JUnit.MapeamentoObjetoEmbutidoTest.analisaMapeamentoObjetoEmbutido" />
-        <item itemvalue="JUnit.MapeandoEnumeracoesTest.testarEnum" />
-        <item itemvalue="JUnit.MapeandoEnumeracoesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +214,8 @@
       <workItem from="1706486523752" duration="717000" />
       <workItem from="1706960730586" duration="6439000" />
       <workItem from="1707009191358" duration="192000" />
-      <workItem from="1711578647005" duration="4688000" />
+      <workItem from="1711578647005" duration="5414000" />
+      <workItem from="1711676944545" duration="3705000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles:&#9;feat: criando entidades">
       <option name="closed" value="true" />
@@ -330,7 +338,17 @@
           <line>58</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/example/relacionamento/OneToOneTest.java</url>
+          <line>19</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="org.example.model.ItemPedido" memberName="pedido" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
 </project>
