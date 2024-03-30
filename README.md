@@ -140,3 +140,28 @@ select
     left outer join pedido_nota_fiscal pedido6_1_ on pedido6_.id=pedido6_1_.pedido_id 
     where pedido0_.id=?
 ```
+
+### Atributo Optional
+- Ao salvar entidade
+ - Se ao salvar precisa de uma outra entidade obrigatória, então colocar o `optional = false` da mais performance
+ - Diz ao hibernate que ele pode usar um `inner join` ou invés de um `left out join`
+- Entidade Pedido
+    - @ManyToOne
+    - @JoinColumn(name = "cliente_id")
+    - private Cliente cliente; 
+
+```
+left outer join
+        tb_cliente cliente1_ 
+            on pedido0_.cliente_id=cliente1_.id 
+```
+- Entidade Pedido
+    - @ManyToOne(optional = false)
+    - @JoinColumn(name = "cliente_id")
+    - private Cliente cliente; 
+    
+```
+inner join
+        tb_cliente cliente1_ 
+            on pedido0_.cliente_id=cliente1_.id 
+```

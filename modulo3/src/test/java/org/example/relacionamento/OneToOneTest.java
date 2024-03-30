@@ -61,34 +61,36 @@ public class OneToOneTest extends EntityManagerTest {
         produto.setDescricao("Café");
         produto.setPreco(new BigDecimal("7.59"));
 
-        ItemPedido itemPedido = new ItemPedido();
-        itemPedido.setQuantidade(5);
-        itemPedido.setPrecoProduto(new BigDecimal("7.59"));
-        itemPedido.setProduto(produto);
-
         Cliente cliente = new Cliente();
         cliente.setSexo(SexoEnum.MASCULINO);
-        cliente.setNome("Andreia");
+        cliente.setNome("Andre");
         //cliente.setPedidos();
-        List<ItemPedido> ip = new ArrayList<>();
-        ip.add(itemPedido);
+
 
         Pedido pedido = new Pedido();
         pedido.setCliente(cliente);
         pedido.setDataPedido(LocalDateTime.now());
         pedido.setStatus(StatusPedidoEnum.PAGO);
+
+
+        ItemPedido itemPedido = new ItemPedido();
+        itemPedido.setQuantidade(5);
+        itemPedido.setPrecoProduto(new BigDecimal("7.59"));
+        itemPedido.setProduto(produto);
+        itemPedido.setPedido(pedido);
+        List<ItemPedido> ip = new ArrayList<>();
+        ip.add(itemPedido);
         pedido.setItens(ip);
 
         entityManager.getTransaction().begin();
         entityManager.persist(produto);
         entityManager.persist(cliente);
-        entityManager.persist(itemPedido);
         entityManager.persist(pedido);
+        entityManager.persist(itemPedido);
         entityManager.getTransaction().commit();
         entityManager.clear();
 
         Pedido pedidoVerificado = entityManager.find(Pedido.class, pedido.getId());
-        Assert.assertTrue(pedidoVerificado.getItens().isEmpty());
         Assert.assertNotNull(pedidoVerificado);
     }
 

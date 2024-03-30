@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="84aeeef9-fff8-45b5-b641-a738c5e964ef" name="Changes" comment=":sparkles:&#9;feat: many to many">
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/ItemPedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/ItemPedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoCartao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/PagamentoCartao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/model/Pedido.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/example/mapeamento/MapeamentoObjetoEmbutidoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/mapeamento/MapeamentoObjetoEmbutidoTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/org/example/relacionamento/OneToOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/example/relacionamento/OneToOneTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,8 +47,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.App.executor": "Run",
+    "JUnit.AutoRelacionamentoTest.executor": "Run",
     "JUnit.AutoRelacionamentoTest.verificaCliente.executor": "Run",
+    "JUnit.ManyToManyTest.executor": "Run",
     "JUnit.ManyToManyTest.verificaCliente.executor": "Run",
+    "JUnit.ManyToOneTest.executor": "Run",
     "JUnit.ManyToOneTest.verificaCliente.executor": "Run",
     "JUnit.ManyToOneTest.verificaClienteItemPedido.executor": "Run",
     "JUnit.MapeamentoCategoriaTest.analisaMapeamentoObjetoEmbutido.executor": "Run",
@@ -53,13 +60,15 @@
     "JUnit.MapeamentoObjetoEmbutidoTest.executor": "Run",
     "JUnit.MapeandoEnumeracoesTest.executor": "Run",
     "JUnit.MapeandoEnumeracoesTest.testarEnum.executor": "Run",
+    "JUnit.OneToManyTest.executor": "Run",
     "JUnit.OneToManyTest.verificaCliente.executor": "Run",
     "JUnit.OneToManyTest.verificaClienteItemPedido.executor": "Debug",
+    "JUnit.OneToOneTest.executor": "Run",
     "JUnit.OneToOneTest.pedidoBanco.executor": "Run",
-    "JUnit.OneToOneTest.testeLazy.executor": "Debug",
+    "JUnit.OneToOneTest.testeLazy.executor": "Run",
     "JUnit.OneToOneTest.verificaCliente.executor": "Debug",
     "JUnit.OneToOneTest.verificaNotaFiscal.executor": "Run",
-    "JUnit.RemovendoEntidadeReferenciadaTest.executor": "Debug",
+    "JUnit.RemovendoEntidadeReferenciadaTest.executor": "Run",
     "JUnit.RemovendoEntidadeReferenciadaTest.removerEntidadeRelacionada.executor": "Run",
     "Maven. [org.apache.maven.plugins:maven-archetype-plugin:RELEASE:generate].executor": "Run",
     "Maven.modulo3 [clean,install].executor": "Run",
@@ -102,8 +111,8 @@
       <command value="mvn clean install" />
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.OneToOneTest.pedidoBanco">
-    <configuration name="ManyToOneTest.verificaClienteItemPedido" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.OneToOneTest">
+    <configuration name="ManyToOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
@@ -113,13 +122,27 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.relacionamento" />
       <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.ManyToOneTest" />
-      <option name="METHOD_NAME" value="verificaClienteItemPedido" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneToOneTest.pedidoBanco" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="OneToManyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="modulo3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.example.relacionamento.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.OneToManyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OneToOneTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
@@ -129,8 +152,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="org.example.relacionamento" />
       <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.OneToOneTest" />
-      <option name="METHOD_NAME" value="pedidoBanco" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -151,7 +173,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OneToOneTest.verificaCliente" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RemovendoEntidadeReferenciadaTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="modulo3" />
       <extension name="coverage">
         <pattern>
@@ -160,36 +182,19 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="org.example.relacionamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.OneToOneTest" />
-      <option name="METHOD_NAME" value="verificaCliente" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="OneToOneTest.verificaNotaFiscal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="modulo3" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="org.example.relacionamento.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="org.example.relacionamento" />
-      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.OneToOneTest" />
-      <option name="METHOD_NAME" value="verificaNotaFiscal" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="org.example.relacionamento.RemovendoEntidadeReferenciadaTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.OneToOneTest.pedidoBanco" />
+        <item itemvalue="JUnit.OneToOneTest" />
         <item itemvalue="JUnit.OneToOneTest.testeLazy" />
-        <item itemvalue="JUnit.OneToOneTest.verificaCliente" />
-        <item itemvalue="JUnit.OneToOneTest.verificaNotaFiscal" />
-        <item itemvalue="JUnit.ManyToOneTest.verificaClienteItemPedido" />
+        <item itemvalue="JUnit.RemovendoEntidadeReferenciadaTest" />
+        <item itemvalue="JUnit.OneToManyTest" />
+        <item itemvalue="JUnit.ManyToOneTest" />
       </list>
     </recent_temporary>
   </component>
@@ -214,7 +219,7 @@
       <workItem from="1707009191358" duration="192000" />
       <workItem from="1711578647005" duration="5414000" />
       <workItem from="1711676944545" duration="3705000" />
-      <workItem from="1711807122514" duration="2852000" />
+      <workItem from="1711807122514" duration="4157000" />
     </task>
     <task id="LOCAL-00001" summary=":sparkles:&#9;feat: criando entidades">
       <option name="closed" value="true" />
@@ -336,11 +341,6 @@
           <url>file://$PROJECT_DIR$/src/test/java/org/example/relacionamento/OneToManyTest.java</url>
           <line>58</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/org/example/relacionamento/OneToOneTest.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
