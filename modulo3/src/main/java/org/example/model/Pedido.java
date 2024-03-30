@@ -26,7 +26,7 @@ public class Pedido {
 
     @ManyToOne // muitos pedidos para um cliente
     @JoinColumn(name = "cliente_id")
-    private Cliente cliente; // pradrão  EAGER - Ancioso, já traz os dados
+    private Cliente cliente; // padrão para não coleções:  EAGER - Ancioso, já traz os dados
 
     @Column(name = "data_pedido")
     private LocalDateTime dataPedido;
@@ -45,8 +45,8 @@ public class Pedido {
     @Embedded
     private EnderecoEntregaPedido enderecoEntrega;
 
-    @OneToMany(mappedBy = "pedido")//,fetch = FetchType.LAZY, cascade = CascadeType.ALL)
-    private List<ItemPedido> itens;
+    @OneToMany(mappedBy = "pedido", fetch = FetchType.EAGER)//,fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<ItemPedido> itens; // Padrão LAZY
 
     @OneToOne(mappedBy = "pedido")
     private PagamentoCartao pagamento;
